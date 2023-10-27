@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+         <!--linking style sheet--> <link rel ="stylesheet" type="text/css" href="locations.css">
+    </head>
+<body>
+    <!-- <script src="app.js"></script> -->
+    <header>
+        <nav>
+            <input type="checkbox">
+            <section id="theSwitch">
+                <img src="../zelda_Totk_Pics/totkLinkSwitch.jpg" width="100" height="45" alt="navImage">
+            </section> 
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="locations.html">LOCATIONS <small>ν</small></a>
+                    <ul>
+                        <li><a href="#theSky">sky</a></li>
+                        <li><a href="#theHyrule">hyrule</a></li>
+                        <li><a href="#theDepths">depths</a></li>
+                    </ul>
+                </li>
+                <li id="test-2"><a href="#">CHARACTERS <small>ν</small></a>
+                    <ul>
+                        <li><a href="#theMain">main</a></li>
+                        <li><a href="#theChampions">champions</a></li>
+                        <li><a href="#theRaces">races</a></li>
+                    </ul>
+                </li>
+                <li id="test-3"><a href="#">STORY <small>ν</small></a>
+                    <ul>
+                        <li><a href="#theMain">past</a></li>
+                        <li><a href="#theChampions">present</a></li>
+                        <li><a href="#theRaces">future</a></li>
+                    </ul>
+                </li>
+                <li><a href="posters.html">POSTERS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+
+        <div class="home-under-nav">
+            <button id="btnOpenQuizModal" data-open-modal>Quiz</button>
+            <img src="../zelda_Totk_Pics/totkHomeUnderTab1.jpg" width="100" height="45">
+            <img src="../zelda_Totk_Pics/totkHomeUnderTab2.jpg" width="100" height="45">
+            <img src="../zelda_Totk_Pics/totkHomeUnder3.jpg" width="100" height="45">
+            <img src="../zelda_Totk_Pics/totkHomeUnderTab4.jpg" width="100" height="45">
+            <button id="btnOpenLoginModal" data-open-modal>Login</button>
+        </div>
+
+        <dialog data-modal id="btnLoginModal">
+            <h1>Login</h1>
+            <form action="">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Submit">
+            </form>
+            <button data-close-modal id="btnCloseLoginModal">Close</button>
+        </dialog>
+
+             <!-- QUIZ MODAL DIALOG -->
+             <dialog data-modal class="modal" id="btnQuizModal">
+                <h1>The Legend of Zelda: Breath of the Wild Quiz</h1>
+                <form  id="quizForm">
+                    <p id="quizModalData_2">quiz information:</p> 
+                    <br>
+                    <label for="hero">Name the hero of the game:</label>
+                    <input type="text" id="hero" name="hero">
+                    <br>
+                    <label for="heroin">Name ther heroin of the game:</label>
+                    <input type="text" id="heroin" name="heroin">
+                    <br>
+                    <button type="submit">submit</button>
+                    <!-- <input type="submit" value="Submit Quiz"> -->
+                </form>
+                <br>
+                <button data-close-modal id="btnCloseQuiz">Close</button>
+            </dialog>
+
+        <script>
+            const openQuizBtn = document.querySelector("#btnOpenQuizModal")
+            const closeBtn = document.querySelector("#btnCloseQuiz")
+            const quizModal = document.querySelector("#btnQuizModal")
+
+            const openLoginBtn = document.querySelector("#btnOpenLoginModal")
+            const loginModalBtn = document.querySelector("#btnLoginModal") 
+            const closeLoginBtn = document.querySelector("#btnCloseLoginModal")
+
+
+            openQuizBtn.addEventListener("click", () => {
+                quizModal.showModal()
+            })
+
+            closeBtn.addEventListener("click", () => {
+                quizModal.close()
+            })
+
+            openLoginBtn.addEventListener("click", () => {
+                loginModalBtn.showModal()
+            })
+
+            closeLoginBtn.addEventListener("click", () => {
+                loginModalBtn.close()
+            })
+        </script>
+        
+        <div class="three-regions">
+            <h2 class="three-heads" id="theSky">sky islands</h2>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland2.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Greater Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland3.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland2.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Greater Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland3.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Sky Island
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkSkyIsland1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="three-regions">
+            <h2 class="three-heads" id="theHyrule">hyrule</h2>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            Hyrule Field
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule2.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            Monsters Ahead
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule3.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            Hyrule Castle
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            Hyrule Field
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule2.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            Monsters Ahead
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule3.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            Hyrule Castle
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkHyrule1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="three-regions">
+            <h2 class="three-heads" id="theDepths">depths</h2>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Depths
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths2.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Dark
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths3.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Ness
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Depths
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths2.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Dark
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths3.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Ness
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                    <li>
+                        <img src="../zelda_Totk_Pics/totkDepths1.jpg" width="200" height="200" alt="navImage">
+                        <p>
+                            The Great Sky Island
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <br>
+
+    <footer>
+        <div>
+            <p>totk 2023</p>
+            <button id="btnOpenContactModal" data-open-modal>Contact</button>
+        </div>
+
+        <dialog data-modal id="btnContactModal">
+            <h1>Contact</h1>
+            <form action="" method="post">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+                <input type="submit" value="Submit">
+              </form> 
+              <br>
+            <button data-close-modal id="btnCloseContactModal">Close</button>
+        </dialog>
+
+        <script>
+            const openContactBtn = document.querySelector("#btnOpenContactModal")
+            const closeContactBtn = document.querySelector("#btnCloseContactModal")
+            const contactModal = document.querySelector("#btnContactModal")
+
+            openContactBtn.addEventListener("click", () => {
+                contactModal.showModal()
+            })
+
+            closeContactBtn.addEventListener("click", () => {
+                contactModal.close()
+            })
+        </script>
+        <script src="script.js" type="module"></script>
+    </footer>
+</body>
+</html>

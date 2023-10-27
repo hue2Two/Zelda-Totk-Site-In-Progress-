@@ -1,0 +1,170 @@
+* {
+    padding: none;
+    margin: none;
+    box-sizing: border-box;
+}
+
+header {
+    border: solid gray px;
+
+    border-top: solid rgba(69, 83, 146, 0.521) 5px;
+    border-left: solid rgba(69, 83, 146, 0.521) 5px;
+    border-right: solid rgba(69, 83, 146, 0.521) 5px;
+    border-radius: 10px;
+    background-color: rgba(70, 92, 189, 0.521);
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    /* border: solid black 2px; */
+
+    border: solid lightslategray 5px;
+    background-color: lightsteelblue;
+ 
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+nav img {
+    /* border: solid green 5px; */
+
+    /* width: 45px;
+    height: 50px; */
+    margin: 0;
+
+}
+
+nav input {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+
+    opacity: 0;
+    
+}
+nav input:checked {
+    width: 280px;
+    height: 210px;
+}
+
+nav input:checked ~ ul {
+    display: block;
+}
+
+nav input:checked ~ ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav input:checked ~ ul li:hover ul {
+    position: absolute;
+    display: flex;
+    
+    
+    left: -140px;
+    top: -5px;
+    
+}
+
+nav input:checked ~ ul #test-2:hover ul {
+    left: -168px;
+}
+
+nav input:checked ~ ul #test-3:hover ul {
+    left: -146px;
+}
+
+
+
+/* nav ul li:hover ul {
+    flex-direction: row;
+} */
+
+nav section {
+    /* border: solid lightsalmon 5px; */
+    border-left: solid lightblue 5px;
+    border-right: solid lightblue 5px;
+
+    transition: 1s ease-in-out;
+    padding: 0;
+}
+
+nav input:checked ~ section {
+    /* border: solid lightgreen 10px; */
+    border-left: solid lightgreen 10px;
+    border-right: solid lightgreen 10px;
+
+    background-image: url("zelda_Totk_Pics/totkZeldaSwitch.jpg");
+    width: 280px;
+    height: 210px;
+    background-size: cover;
+
+    transition:  1s ease-in-out;
+}
+
+nav input:checked ~ section img {
+    display: none;
+}
+
+nav ul {
+    /* border: solid red 5px; */
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    /* border: solid blue 5px; */
+
+    border-left: solid lightslategray 2px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 12px;
+    position: relative;
+}
+
+nav ul li a {
+    
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+/* ---------------------------------------------------------- */
+
+nav ul li ul {
+    /* border: solid orange 5px; */
+
+    /* border: none; */
+    display: none;
+    position: absolute;
+    background-color: rgb(182, 217, 231);
+    border-radius: 5px;
+}
+
+nav ul li ul li {
+    border: none;
+    padding-bottom: 8px;
+}
+
+nav ul li ul li:hover {
+    background-color: rgb(107, 140, 154);
+}
+
+nav ul li:hover ul {
+    display: block;
+}

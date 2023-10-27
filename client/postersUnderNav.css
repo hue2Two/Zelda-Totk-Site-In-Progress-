@@ -1,0 +1,30 @@
+.home-under-nav {
+    /* border: solid grey 2px; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(136, 146, 190, 0.521);
+}
+
+.home-under-nav img {
+    /* border: solid red 2px; */
+
+}
+
+.home-under-nav img:hover {
+    border: solid black 2px;
+    transform: rotate(360deg);
+    transition: 1s ease-in-out;
+
+}
+
+.home-under-nav button {
+    /* border: solid green 2px; */
+    
+}
+
+.home-under-nav button:hover {
+    background-color: lightcoral;
+    transition: 0.5s ease-in;
+}

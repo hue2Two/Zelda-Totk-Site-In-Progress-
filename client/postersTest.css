@@ -1,0 +1,98 @@
+.container {
+    border: solid red 5px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10% 30% 30% 30%;
+}
+
+
+.item {
+    padding: 2px;
+    border: solid blue 2px;
+    background-color: lightblue;
+}
+
+.item img {
+    margin-left: 14%;
+    margin-top: 6px;
+    
+}
+
+.item section {
+    border: solid purple 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.item section button {
+    border: solid pink 2px;
+    width: 50px;
+    height: 100%;
+}
+
+.item-0 {
+    border: solid yellow 5px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#posters-header {
+    border: solid green 5px;
+}
+
+#cart {
+    border: solid pink 5px;
+}
+
+#cartSpace {
+    border: solid gray 5px;
+    display: flex;
+}
+
+.newItem1 {
+    border: solid purple 2px;
+}
+
+.newItem2 {
+    border: solid blue 2px;
+}
+
+.newItem2:hover {
+    cursor: pointer;
+    background-color: lightcoral;
+}
+
+.newItem1:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+#b1 {
+    transition: 1s ease-in-out;
+}
+
+#b1:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    transition: 1s ease-in-out;
+}
+
+#b2 {
+    transition: 1s ease-in-out;
+}
+
+#b2:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    transition: 1s ease-in-out;
+}
+

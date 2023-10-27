@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--linking style sheet--> <link rel ="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" href="/client/favicon.ico">
+</head>
+<body>
+    <div id="testing"></div>
+    <!--  -->
+    <header>
+        <nav>
+            <input type="checkbox">
+            <section id="theSwitch">
+                <img src="../zelda_Totk_Pics/totkLinkSwitch.jpg" width="100" height="45" alt="navImage">
+            </section> 
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="locations.html">LOCATIONS <small>ν</small></a>
+                    <ul>
+                        <li><a href="#theSky">sky</a></li>
+                        <li><a href="#theHyrule">hyrule</a></li>
+                        <li><a href="#theDepths">depths</a></li>
+                    </ul>
+                </li>
+                <li id="test-2"><a href="#">CHARACTERS <small>ν</small></a>
+                    <ul>
+                        <li><a href="#theMain">main</a></li>
+                        <li><a href="#theChampions">champions</a></li>
+                        <li><a href="#theRaces">races</a></li>
+                    </ul>
+                </li>
+                <li id="test-3"><a href="#">STORY <small>ν</small></a>
+                    <ul>
+                        <li><a href="#theMain">past</a></li>
+                        <li><a href="#theChampions">present</a></li>
+                        <li><a href="#theRaces">future</a></li>
+                    </ul>
+                </li>
+                <li><a href="posters.html">POSTERS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+
+    <main>
+        <div class="home-under-nav">
+            <button id="btnOpenQuizModal" data-open-modal>Quiz</button>
+            <img src="../zelda_Totk_Pics/totkHomeUnderTab1.jpg" width="100" height="45">
+            <img src="../zelda_Totk_Pics/totkHomeUnderTab2.jpg" width="100" height="45">
+            <img src="../zelda_Totk_Pics/totkHomeUnder3.jpg" width="100" height="45">
+            <img src="../zelda_Totk_Pics/totkHomeUnderTab4.jpg" width="100" height="45">
+            <button id="btnOpenLoginModal" data-open-modal>Login</button>
+        </div>
+
+        <dialog data-modal id="btnLoginModal">
+            <h1>Login</h1>
+            <div id="myLoginModal">
+                <!-- un >> users route -->
+                <p id="un">hue</p>
+                <p id="pw">password</p>
+                <form id="gin ichimaru">
+                    <label for="uname">username:</label>
+                    <input type="text" id="uname" name="uname">
+                    <br>
+                    <label for="pword">password:</label>
+                    <input type="text" id="pword" name="pword">
+                    <br>
+                    <button type="submit">submit</button>
+              </form>
+                <button data-close-modal id="btnCloseLoginModal">Close</button>
+            </div>
+        </dialog>
+
+        <!-- QUIZ MODAL DIALOG -->
+        <dialog data-modal class="modal" id="btnQuizModal">
+            <h1>The Legend of Zelda: Breath of the Wild Quiz</h1>
+            <form  id="quizForm">
+                <p id="quizModalData_2">quiz information:</p> 
+                <br>
+                <label for="hero">Name the hero of the game:</label>
+                <input type="text" id="hero" name="hero">
+                <br>
+                <label for="heroin">Name ther heroin of the game:</label>
+                <input type="text" id="heroin" name="heroin">
+                <br>
+                <button type="submit">submit</button>
+                <!-- <input type="submit" value="Submit Quiz"> -->
+            </form>
+            <br>
+            <button data-close-modal id="btnCloseQuiz">Close</button>
+        </dialog>
+
+        <script>
+            const openQuizBtn = document.querySelector("#btnOpenQuizModal")
+            const closeBtn = document.querySelector("#btnCloseQuiz")
+            const quizModal = document.querySelector("#btnQuizModal")
+
+            const openLoginBtn = document.querySelector("#btnOpenLoginModal")
+            const loginModalBtn = document.querySelector("#btnLoginModal") 
+            const closeLoginBtn = document.querySelector("#btnCloseLoginModal")
+
+
+            openQuizBtn.addEventListener("click", () => {
+                quizModal.showModal()
+            })
+
+            closeBtn.addEventListener("click", () => {
+                quizModal.close()
+            })
+
+            openLoginBtn.addEventListener("click", () => {
+                loginModalBtn.showModal()
+            })
+
+            closeLoginBtn.addEventListener("click", () => {
+                loginModalBtn.close()
+            })
+        </script>
+
+        <br>
+
+        <div class="trailer-styler">
+            <div class="home-trailer">
+                <h2>Reveal Trailer</h2>
+                <video autoplay muted controls>
+                    <source src="../zelda_Totk_Vids/botw1.mp4" type="video/mp4">
+                </video>
+                <p>The Legend of Zelda: Breath of the Wild will be a Nintendo Switch launch title after all. The fate of the game — the 19th main installment in the long-running series — was up in the air after reports of localization issues arose late last year. Those issues don't appear to have delayed the game past the March 3rd arrival of Nintendo's newest console. The company announced both the release date for the Switch and the availability of Breath of the Wild in a global live stream from Tokyo today. And in a tweet posted to the Nintendo of America Twitter account, the company announced that the game would also release on Wii U on March 3rd as well.</p>
+            </div>
+            <div class="home-after-trailer">
+                <div>
+                    <h2>Review</h2>
+                    <div class="home-after-trailer-p1">
+                        <p>"The Legend of Zelda: Breath of the Wild's sheer freedom and sense of adventure is a remarkable achievement. Right from the start, the vast landscape of Hyrule is thrown completely open to you, and it constantly finds ways to pique your curiosity with mysterious landmarks, complex hidden puzzles, and enemy camps to raid for treasure and weapons. The fact that you can tackle any one of these things at your own pace and almost never get pulled to the main path is liberating, but the way all of Breath of the Wild's systems fit elegantly into complex light survival game is even more impressive.</p>
+                        <img src="../zelda_Totk_Pics/totkHyrule2.jpg" width="200px" height="200">
+                </div>
+                <h2 id="h2-special">Summary</h2>
+                <div class="home-after-trailer-p2">
+                    <p>"The Legend of Zelda: Breath of the Wild's sheer freedom and sense of adventure is a remarkable achievement. Right from the start, the vast landscape of Hyrule is thrown completely open to you, and it constantly finds ways to pique your curiosity with mysterious landmarks, complex hidden puzzles, and enemy camps to raid for treasure and weapons. The fact that you can tackle any one of these things at your own pace and almost never get pulled to the main path is liberating, but the way all of Breath of the Wild's systems fit elegantly into complex light survival game is even more impressive.</p>
+                    <img src="../zelda_Totk_Pics/totkSkyIsland2.jpg" width="200px" height="200">
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <br>
+
+    <footer>
+        <div>
+            <p>totk 2023</p>
+            <button id="btnOpenContactModal" data-open-modal>Contact</button>
+        </div>
+
+        <dialog data-modal id="btnContactModal">
+            <h1>Contact</h1>
+              <form id="bleach-1">
+                    <label for="M-Lead">M-Lead:</label>
+                    <input type="text" id="M-Lead" name="M-Lead">
+                    <br>
+                    <label for="M-Lead">F-Lead:</label>
+                    <input type="text" id="F-Lead" name="F-Lead">
+                    <br>
+                    <button type="submit">submit</button>
+              </form>
+              <br>
+            <button data-close-modal id="btnCloseContactModal">Close</button>
+        </dialog>
+
+        <script>
+            const openContactBtn = document.querySelector("#btnOpenContactModal")
+            const closeContactBtn = document.querySelector("#btnCloseContactModal")
+            const contactModal = document.querySelector("#btnContactModal")
+
+            openContactBtn.addEventListener("click", () => {
+                contactModal.showModal()
+            })
+
+            closeContactBtn.addEventListener("click", () => {
+                contactModal.close()
+            })
+        </script>
+    </footer>
+</body>
+<script src="script.js" type="module"></script>
+</html>
